@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>jQuery Input Math Plugin Test Page</title>
+  </head>
+  <body>
+    <form>
+      <label for="test">
+        Enter equation to test preceded by an equal (=) sign (e.g. =2+4)
+      </label>
+      <input id="test" type="text" size="25">
+    </form>                                                                                                         
+    <script type="text/javascript">   
+    setTimeout(function(){
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }, 0);  
+    setTimeout(function(){
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://github.com/aaronmccall/jquery.inputMath/raw/master/jquery.inputMath.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }, 0);
+    
+    window['_iv'] =  setInterval(function(){
+     if (window.$ && $.fn.inputMath) {
+        clearInterval(_iv);
+        delete _iv;
+        $(function(){
+          $('#test').inputMath()
+        });
+     }
+    }, 50);
+    </script>
+  </body>
+</html>

@@ -29,7 +29,7 @@
                 _regex = /([^\d\.\(\)\+\-\*\/])/g;
                 _clean = _val.replace(_regex, '');
                 debug(_clean)
-                _result = eval(_expression);
+                _result = eval(_clean);
                 debug(_result)
                 if (!isNaN(_result)) {
                     this.value =  _result;

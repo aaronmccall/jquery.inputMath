@@ -10,6 +10,14 @@ This plugin allows you to apply a blur (default behavior) handler that will perf
 
 Usage:
 ------
-**HTML:**
+**HTML**
 
-&lt;pre&gt;&lt;code&gt;&lt;input id="math_input" type="text" size="20" /&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;input id="math_input" type="text" size="20" /&gt;
+
+**JS**
+Add a script tag with src set to the path to jquery.inputMath.js.
+Add '$('#math_input').inputMath();' at the bottom of your jQuery $(document).ready handler
+$(function(){
+  ...
+  $('#math_input').inputMath();
+})

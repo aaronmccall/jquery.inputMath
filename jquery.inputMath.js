@@ -26,7 +26,7 @@
         this.bind(opts.event, function(e){
             var _val = this.value;
             if (_val.charAt(0) === '=') {
-                _regex = /([^\.\(\)\+\-\*\/])/g;
+                _regex = /([^\d\.\(\)\+\-\*\/])/g;
                 _clean = _val.replace(_regex, '');
                 debug(_clean)
                 _result = eval(_expression);

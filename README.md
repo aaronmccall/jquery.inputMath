@@ -1,1 +1,2 @@
-README
+jQuery Input Math Plugin
+========================

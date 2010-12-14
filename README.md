@@ -12,4 +12,4 @@ Usage:
 ------
 **HTML:**
 
-<pre><code><input id="math_input" type="text" size="20" /></code></pre>
+&lt;pre&gt;&lt;code&gt;&lt;input id="math_input" type="text" size="20" /&gt;&lt;/code&gt;&lt;/pre&gt;

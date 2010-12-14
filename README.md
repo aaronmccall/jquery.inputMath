@@ -20,7 +20,7 @@ Add a script tag with src set to the path to jquery.inputMath.js.
 
 Add '$('#math_input').inputMath();' at the bottom of your jQuery $(document).ready handler
 
-$(function(){  
+`$(function(){  
   ...  
   $('#math_input').inputMath();  
-})
+})`

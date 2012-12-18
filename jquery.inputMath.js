@@ -6,7 +6,6 @@
 (function($){
     var ops = {
             add: function (ig, add1, add2) {
-                console.log(arguments);
                 return (1*add1) + (1*add2);
             },
             divide: function (ig, dividend, divisor) {
@@ -65,7 +64,6 @@
             var _val = this.value;
             if (_val.charAt(0) === '=') {
                 _val = parser(_val);
-                //The regex strips out all characters that are not a digit, a period, a parens or an arithmetic operator
                 if (!isNaN(_val)) this.value = _val;
             }
         });
